@@ -1,6 +1,6 @@
 # React Dashboard App
 
-### The project is live at (<https://zippy-palmier-694563.netlify.app>)
+### The project is live at (https://zippy-palmier-694563.netlify.app)
 
 # Getting Started with Create React App
 
