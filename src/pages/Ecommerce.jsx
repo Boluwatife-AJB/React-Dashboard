@@ -97,7 +97,7 @@ const Ecommerce = () => {
 
               <div className="mt-5">
                 <SparkLine
-                  currenetColor="crimson"
+                  currentColor="crimson"
                   id="line-sparkline"
                   type="Line"
                   height="80px"
