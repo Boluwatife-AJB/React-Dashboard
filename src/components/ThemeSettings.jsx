@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineCancel } from 'react-icons/md';
 import { BsCheck } from 'react-icons/bs';
-import { Tooltip, TooltipComponent } from '@syncfusion/ej2-react-popups';
+import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import { themeColors } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
@@ -17,14 +17,15 @@ const ThemeSettings = () => {
           <button
             type="button"
             onClick={() => setThemeSettings(false)}
-            style={{ color: 'rgb(153, 171,180', borderRadius: '50%' }}
+            style={{ color: 'rgb(153, 171,180)', borderRadius: '50%' }}
+            className="text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray"
           >
-            <MdOutlineCancel className="text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray" />
+            <MdOutlineCancel />
           </button>
         </div>
 
         <div className="flex-col border-t-1 border-color p-4 ml-4">
-          <p className="font-semibold text-lg">Theme Options</p>
+          <p className="font-semibold text-xl">Theme Options</p>
           <div className="mt-4">
             <input
               type="radio"
@@ -35,7 +36,7 @@ const ThemeSettings = () => {
               onChange={setMode}
               checked={currentMode === 'Light'}
             />
-            <label htmlFor="light" className="ml-2 text-md curosr-pointer">
+            <label htmlFor="light" className="ml-2 text-md cursor-pointer">
               Light
             </label>
           </div>
@@ -49,13 +50,13 @@ const ThemeSettings = () => {
               onChange={setMode}
               checked={currentMode === 'Dark'}
             />
-            <label htmlFor="dark" className="ml-2 text-md curosr-pointer">
+            <label htmlFor="dark" className="ml-2 text-md cursor-pointer">
               Dark
             </label>
           </div>
         </div>
 
-        <div className="fkex-col border-t-1 border-color p-4 ml-4">
+        <div className="flex-col border-t-1 border-color p-4 ml-4">
           <p className="font-semibold text-lg">Theme Colors</p>
           <div className="flex gap-3">
             {themeColors.map((item, index) => (
